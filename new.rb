@@ -6,6 +6,10 @@ caesar.split('').each do |i|         # itterate on string to cypher
   puts alph[alph.index(i).to_i + 2]  # replace character fron string with 2 position higher (a -> c)
 end
 
+Time.now   # returns curent time
+
+Date.today   # return current date
+required 'date'  # must load this first to make date.today working
 
 # not sure whats that?
 
