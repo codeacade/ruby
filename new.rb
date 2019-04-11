@@ -6,8 +6,11 @@ caesar.split('').each do |i|         # itterate on string to cypher
   puts alph[alph.index(i).to_i + 2]  # replace character fron string with 2 position higher (a -> c)
 end
 
-alp=("a".."z").to_a
-alp*=2
+####### JUST DISCOVERED - HOW TO OPERATE ON BLOCK RESULTS ##########
+####### BELOW - EXAMPLE. NOT FULLY WORKING CODE #############
+[2,4,6,8,10].each{|i| p i}        ## this returns [2,4,6,8,10] array
+[2,4,6,8,10].each{|i| p i}.join   ## this returns string made of .joined array !
+##############              \__add operator after block to change what's returned !
 
 # Xmass tree
 
