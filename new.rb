@@ -12,8 +12,12 @@ end
 [2,4,6,8,10].each{|i| p i}.join   ## this returns string made of .joined array !
 ##############              \__add operator after block to change what's returned !
 
-# Xmass tree
+# yield maxic example
+def yy arr,a
+  arr.each{|i| p "#{yield i} - #{a}"; a = a.next}
+end
 
+# Xmass tree
 30.times {|i| puts " "*(30-i) + "X"*i*2}
 
 Time.now   # returns curent time
