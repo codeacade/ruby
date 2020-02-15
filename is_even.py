@@ -31,4 +31,24 @@ def digit_sum(n):
   return result
 
 
+# https://www.codecademy.com/courses/learn-python/lessons/exam-statistics/exercises/the-sum-of-scores
+#
+# I know what you’re thinking, “let’s just use the built-in sum function!” 
+# The built-in function would work beautifully, but it would be too easy.
+
+grades = [100, 100, 90, 40, 80, 100, 85, 70, 90, 65, 90, 85, 50.5]
+
+def grades_sum(scores):
+  result = 0;
+  for i in scores:
+    result+=i
+  return result
+
+print(grades_sum(grades))
+
+
+
+
+
+
 
