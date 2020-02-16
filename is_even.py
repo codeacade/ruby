@@ -10,6 +10,7 @@ def is_even(x):
     return False
 print is_even(900)
 
+
 # https://www.codecademy.com/courses/learn-python/lessons/practice-makes-perfect/exercises/isint
 #
 # Define a function is_int that takes a number x as an input.
@@ -17,6 +18,7 @@ print is_even(900)
 
 def is_int(x):
   return (x%1==0)
+
 
 # https://www.codecademy.com/courses/learn-python/lessons/practice-makes-perfect/exercises/digitsum
 #
@@ -30,6 +32,7 @@ def digit_sum(n):
     result+=int(i)
   return result
 
+
 # https://www.codecademy.com/courses/learn-python/lessons/practice-makes-perfect/exercises/factorial
 #
 # Define a function factorial that takes an integer x as input.
@@ -40,6 +43,7 @@ def factorial(x):
   for i in range(1,x+1):
     result*=i
   return result
+
 
 # https://www.codecademy.com/courses/learn-python/lessons/practice-makes-perfect/exercises/isprime
 #
@@ -53,8 +57,18 @@ def is_prime(x):
     return all(x%i!=0 for i in range(2,x))
   return False
 
+
+# https://www.codecademy.com/courses/learn-python/lessons/practice-makes-perfect/exercises/reverse
 # 
-# 
-# 
+# Define a function called reverse that takes a string textand returns that string in reverse. 
+# For example: reverse("abcd") should return "dcba".
+# You may not use reversed or [::-1] to help you with this.
+
+def reverse(text):
+  result=""
+  for i in range(len(text)-1,-1,-1):
+    result+=text[i]
+  return result
+
 # 
 
