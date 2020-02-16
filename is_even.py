@@ -70,5 +70,26 @@ def reverse(text):
     result+=text[i]
   return result
 
+# https://www.codecademy.com/courses/learn-python/lessons/practice-makes-perfect/exercises/antivowel
 # 
+# Define a function called anti_vowel that takes one string, text, as input and returns the text with all of the vowels removed.
+# For example: anti_vowel("Hey You!") should return "Hy Y!". Don’t count Y as a vowel. 
+# Make sure to remove lowercase and uppercase vowels.
+
+# version.1
+
+def anti_vowel(text):
+  for i in "aeiouAEIOU":
+    text.replace(i,"")
+  return text
+
+# version.2 after codecademy blocked use of funtion string.replace(old, new, count) /https://www.geeksforgeeks.org/python-string-replace/
+
+def anti_vowel(text):
+  result=""
+  for i in text:
+    if not i in "aeiouAEIOU":
+      result+=i
+  return result
+
 
