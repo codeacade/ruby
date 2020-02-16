@@ -81,10 +81,10 @@ def reverse(text):
 
 def anti_vowel(text):
   for i in "aeiouAEIOU":
-    text.replace(i,"")
+    text = text.replace(i,"")
   return text
 
-# version.2 after codecademy blocked use of funtion string.replace(old, new, count) /https://www.geeksforgeeks.org/python-string-replace/
+# version.2 without using string.replace(old, new, count) /https://www.geeksforgeeks.org/python-string-replace/
 
 def anti_vowel(text):
   result=""
