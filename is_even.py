@@ -30,25 +30,19 @@ def digit_sum(n):
     result+=int(i)
   return result
 
-
-# https://www.codecademy.com/courses/learn-python/lessons/exam-statistics/exercises/the-sum-of-scores
+# https://www.codecademy.com/courses/learn-python/lessons/practice-makes-perfect/exercises/factorial
 #
-# I know what you’re thinking, “let’s just use the built-in sum function!” 
-# The built-in function would work beautifully, but it would be too easy.
+# Define a function factorial that takes an integer x as input.
+# Calculate and return the factorial of that number.
 
-grades = [100, 100, 90, 40, 80, 100, 85, 70, 90, 65, 90, 85, 50.5]
-
-def grades_sum(scores):
-  result = 0;
-  for i in scores:
-    result+=i
+def factorial(x):
+  result=1
+  for i in range(1,x+1):
+    result*=i
   return result
 
-print(grades_sum(grades))
-
-
-
-
-
+#
+#
+#
 
 
