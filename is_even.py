@@ -118,3 +118,22 @@ def scrabble_score(word):
   return result
 
 
+
+# https://www.codecademy.com/courses/learn-python/lessons/practice-makes-perfect/exercises/censor-
+# 
+# Write a function called censor that takes two strings, text and word, as input. 
+# It should return the text with the word you chose replaced with asterisks. For example:
+censor("this hack is good hacker hack", "hack")
+should return: 
+"this **** is good hacker ****"
+# Assume your input strings won’t contain punctuation or upper case letters.
+# The number of asterisks you put should correspond to the number of letters in the censored word.
+
+def censor(text, word):
+  text = text.split()
+  result = ["*"*len(i) if i==word else i for i in text]  # <<<<<< THIS iS BRILLIANT AND I HAVE TO USE IT
+  return " ".join(result)
+# a = [x if ... else y for i in b]  <<<< this is abslutely fantastic construction
+# I have no idea why it is not tought first lesson of Python everywhere ??
+
+
