@@ -41,8 +41,20 @@ def factorial(x):
     result*=i
   return result
 
+# https://www.codecademy.com/courses/learn-python/lessons/practice-makes-perfect/exercises/isprime
 #
-#
-#
+# Define a function called is_prime that takes a number x as input.
+# For each number n from 2 to x - 1, test if x is evenly divisible by n.
+# If it is, return False.
+# If none of them are, then return True.
 
+def is_prime(x):
+  if x>1:
+    return all(x%i!=0 for i in range(2,x))
+  return False
+
+# 
+# 
+# 
+# 
 
