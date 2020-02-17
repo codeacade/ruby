@@ -137,3 +137,18 @@ def censor(text, word):
 # I have no idea why it is not tought first lesson of Python everywhere ??
 
 
+
+# https://www.codecademy.com/courses/learn-python/lessons/practice-makes-perfect/exercises/purify
+# 
+# Define a function called purify that takes in a list of numbers, removes all odd numbers in the list, and returns the result. 
+# For example, purify([1,2,3]) should return [2].
+
+def purify(numbers):
+  result = []
+  for i in numbers:
+    if i%2==0:
+      result.append(i)
+  return result
+
+
+
