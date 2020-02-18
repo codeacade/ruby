@@ -177,6 +177,22 @@ def remove_duplicates(numbers):
       result.append(i)
   return result
 
+
+
+# https://www.codecademy.com/courses/learn-python/lessons/practice-makes-perfect/exercises/median
 # 
+# Write a function called median that takes a list as an input and returns the median value of the list. 
+# For example: median([1, 1, 2]) should return 1.
+# The list can be of any size and the numbers are not guaranteed to be in any particular order. Make sure to sort it!
+# If the list contains an even number of elements, your function should return the average of the middle two.
+
+def median(n):
+  n.sort()
+  l = len(n)
+  if l%2:
+    return n[(l-1)/2]
+  return (n[l/2]+n[l/2-1])/2.0
+
+
 
 
