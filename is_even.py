@@ -165,3 +165,18 @@ def product(numbers):
 
 ###### SUPEREASY #######
 
+
+# https://www.codecademy.com/courses/learn-python/lessons/practice-makes-perfect/exercises/removeduplicates
+# 
+# Write a function remove_duplicates that takes in a list and removes elements of the list that are the same.
+
+def remove_duplicates(numbers):
+  result=[]
+  for i in numbers:
+    if not i in result:
+      result.append(i)
+  return result
+
+# 
+
+
