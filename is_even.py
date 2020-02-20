@@ -103,7 +103,6 @@ def anti_vowel(text):
 # Your function should work even if the letters you get are uppercase, lowercase, or a mix.
 # Assume that you’re only given non-empty strings.
 
-
 score = {"a": 1, "c": 3, "b": 3, "e": 1, "d": 2, "g": 2, 
          "f": 4, "i": 1, "h": 4, "k": 5, "j": 8, "m": 3, 
          "l": 1, "o": 1, "n": 1, "q": 10, "p": 3, "s": 1, 
@@ -193,6 +192,6 @@ def median(n):
     return n[(l-1)/2]
   return (n[l/2]+n[l/2-1])/2.0
 
-
+# END OF SECTION
 
 
