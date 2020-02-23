@@ -136,8 +136,8 @@ def scrabble_score(word):
 
 def censor(text, word):
   text = text.split()
-  result = ["*"*len(i) if i==word else i for i in text]  # <<<<<< THIS iS BRILLIANT AND I HAVE TO USE IT
-  return " ".join(result)
+  result = "".join(["*"*len(i) if i==word else i for i in text])  # <<<<<< THIS iS BRILLIANT AND I HAVE TO USE IT
+  return result
 # a = [x if ... else y for i in b]  <<<< this is abslutely fantastic construction
 # I have no idea why it is not tought first lesson of Python everywhere ??
 
@@ -154,6 +154,12 @@ def purify(numbers):
     if i%2==0:
       result.append(i)
   return result
+
+# same as above but usinf "for-if" scheme:
+
+def purify(numbers):
+    result = [i for i in numbers if i%2==0]
+    return result
 
 
 # https://www.codecademy.com/courses/learn-python/lessons/practice-makes-perfect/exercises/product
