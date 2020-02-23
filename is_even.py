@@ -93,6 +93,12 @@ def anti_vowel(text):
       result+=i
   return result
 
+# version.3 using "for-if" structure from part 9
+
+def anti_vowel(text):
+  result = "".join([i for i in text if i not in "aeiouAEIOU"])
+  return result
+
 
 
 # https://www.codecademy.com/courses/learn-python/lessons/practice-makes-perfect/exercises/scrabblescore
