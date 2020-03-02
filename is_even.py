@@ -32,6 +32,11 @@ def digit_sum(n):
     result+=int(i)
   return result
 
+# version.1 (using >>lambda<< and >>reduce<< function):
+
+def digit_sum(n):
+  return reduce(lambda x,y:int(x)+int(y),str(n))
+
 
 # https://www.codecademy.com/courses/learn-python/lessons/practice-makes-perfect/exercises/factorial
 #
@@ -44,6 +49,10 @@ def factorial(x):
     result*=i
   return result
 
+# version.1 (using >>lambda<< and >>reduce<< function):
+
+def factorial(x):
+  return reduce(lambda x,y:x*y, range(1,x+1)
 
 # https://www.codecademy.com/courses/learn-python/lessons/practice-makes-perfect/exercises/isprime
 #
