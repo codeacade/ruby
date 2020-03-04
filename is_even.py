@@ -27,15 +27,23 @@ def is_int(x):
 # (Assume that the number you are given will always be positive.)
 
 def digit_sum(n):
-  result=0
+  result = 0
   for i in str(n):
-    result+=int(i)
+    result += int(i)
   return result
 
 # version.1 (using >>lambda<< and >>reduce<< function):
 
 def digit_sum(n):
   return reduce(lambda x,y:int(x)+int(y),str(n))
+
+# version.2 using side evaluation (a,b = b,a):
+
+def digit_sum(n):
+   result = 0
+   while n>0:
+     n, result = int(n/10), result + n%10
+   return result
 
 
 # https://www.codecademy.com/courses/learn-python/lessons/practice-makes-perfect/exercises/factorial
