@@ -32,7 +32,7 @@ def digit_sum(n):
     result += int(i)
   return result
 
-# version.1 (using >>lambda<< and >>reduce<< function):
+# version.1 (using >>lambda<< and >>reduce (REDUCE GOT REMOVED FROM PYTHON3) << function):
 
 def digit_sum(n):
   return reduce(lambda x,y:int(x)+int(y),str(n))
@@ -57,7 +57,7 @@ def factorial(x):
     result*=i
   return result
 
-# version.1 (using >>lambda<< and >>reduce<< function):
+# version.1 (using >>lambda<< and >>reduce (REDUCE GOT REMOVED FROM PYTHON3) << function):
 
 def factorial(x):
   return reduce(lambda x,y:x*y, range(1,x+1)
