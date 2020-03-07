@@ -20,14 +20,14 @@ class ShoppingCart(object):
     """Add product to the cart."""
     if not product in self.items_in_cart:
       self.items_in_cart[product] = price
-      print product + " added."
+      print(product + " added.")
     else:
-      print product + " is already in the cart."
+      print(product + " is already in the cart.")
 
   def remove_item(self, product):
     """Remove product from the cart."""
     if product in self.items_in_cart:
       del self.items_in_cart[product]
-      print product + " removed."
+      print(product + " removed.")
     else:
-      print product + " is not in the cart."
+      print(product + " is not in the cart.")
