@@ -69,7 +69,41 @@ print eva.items_in_cart   # first internal parameter of super-class ShoppingCart
 eva.add_item("banana", 12)  # first internal method (funcion) of super-class ShoppingCart()
 eva.list_items()   # new added method (function) of super-class ShoppingCart()
 
-steven = ShoppingCart.testCart()  # an instance (object) of child-class testCart()
-steven.add_test()    # new added method (function) of of child-class testCart()
+
+stephen = ShoppingCart.testCart()  # an instance (object) of child-class testCart()
+stephen.add_test()    # new added method (function) of of child-class testCart()
+stephen.add_item("banana", 12)  # still can use inherited method (funcion) of super-class ShoppingCart()
+
+
+bryan = ShoppingCart.testCart()  # another instance (object) of child-class testCart()
+bryan.add_test()    # new added method (function) of of child-class testCart()
+bryan.list_items()   # use of inherited method (function) of super-class ShoppingCart()
+
+
+# ------------------------ INHERITANCE EXAMPLE ------------------------------
+# -- Inheriting class (DERIVED) can use orginal super-methods from super-class
+# -- Inheriting class (DERIVED) can also use it's own classes not from super-class
+# -- Inheriting class (DERIVED) can rewrite existing "__init__" with new (see Triangle below)
+
+class Shape(object):
+  """Makes shapes!"""
+  def __init__(self, number_of_sides):
+    self.number_of_sides = number_of_sides
+
+# to create an instance (object):
+
+octagon = Shape(8)     # octagen is new instance (object) of Shape() class.
+print(octagon.number_of_sides)   # this is the only prarameter of super-class Shapes()
+
+class Triangle(Shape):
+    """Makes triangles!"""
+    def __init__(self, side1, side2, side3):
+      self.side1 = side1
+      self.side2 = side2
+      self.side3 = side3
+
+ tent = Triangle(120,150,200)   # "tent" is an instance (object) of DERIVED (child) class Triangle()
+                               # Triangle() class need 3 parameters (see __init__)
+ print(tent.side1)   # returns first parameter of object "tent"
 
 # end
