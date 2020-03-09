@@ -1,3 +1,6 @@
+# PYTHON CLASSES?
+https://github.com/codeacade/ruby/blob/master/ShoppingCard.py
+
 # ruby
 To do cool githubs from ruby
 
