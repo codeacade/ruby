@@ -91,7 +91,7 @@ class Shape(object):
   def __init__(self, number_of_sides):
     self.number_of_sides = number_of_sides
   def node_number(self):
-    return number_of_sides
+    return self.number_of_sides
 
 # to create an instance (object):
 
@@ -110,5 +110,11 @@ class Triangle(Shape):
  tent = Triangle(120,150,200)   # "tent" is an instance (object) of DERIVED (child) class Triangle()
                                # Triangle() class need 3 parameters (see __init__)
  print(tent.side1)   # returns first parameter of object "tent"
+
+# -------------INHERITANCE SIDE EFFECTS (bad) ----------------------
+# In case we want to restore overwriten super-method - use "super" object as below:
+# ...add to very end of Triangl() class
+
+def nodes_number(self): return super(Triangle, self).nodes_number()
 
 # end
