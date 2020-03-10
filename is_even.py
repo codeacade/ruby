@@ -45,6 +45,11 @@ def digit_sum(n):
      n, result = int(n/10), result + n%10
    return result
 
+# version.3 SIMPLEST POSSIBLE !!
+
+def digit_sum(n):
+    return sum([int(i) for i in str(n)])
+
 
 # https://www.codecademy.com/courses/learn-python/lessons/practice-makes-perfect/exercises/factorial
 #
