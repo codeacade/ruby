@@ -83,12 +83,15 @@ bryan.list_items()   # use of inherited method (function) of super-class Shoppin
 # ------------------------ INHERITANCE EXAMPLE ------------------------------
 # -- Inheriting class (DERIVED) can use orginal super-methods from super-class
 # -- Inheriting class (DERIVED) can also use it's own classes not from super-class
-# -- Inheriting class (DERIVED) can rewrite existing "__init__" with new (see Triangle below)
+# -- Inheriting class (DERIVED) can also overwrite existing super-methods from super-class
+# -- Inheriting class (DERIVED) can overwrite existing "__init__" with new (see Triangle below)
 
 class Shape(object):
   """Makes shapes!"""
   def __init__(self, number_of_sides):
     self.number_of_sides = number_of_sides
+  def node_number(self):
+    return number_of_sides
 
 # to create an instance (object):
 
@@ -101,6 +104,8 @@ class Triangle(Shape):
       self.side1 = side1
       self.side2 = side2
       self.side3 = side3
+    def nodes_number(self)
+      return 3
 
  tent = Triangle(120,150,200)   # "tent" is an instance (object) of DERIVED (child) class Triangle()
                                # Triangle() class need 3 parameters (see __init__)
