@@ -10,6 +10,11 @@ def is_even(x):
     return False
 print is_even(900)
 
+# or simpe: 
+
+def is_even(x):
+    return x%2 ==0
+
 
 # https://www.codecademy.com/courses/learn-python/lessons/practice-makes-perfect/exercises/isint
 #
