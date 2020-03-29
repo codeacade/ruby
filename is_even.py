@@ -96,6 +96,14 @@ def reverse(text):
   for i in range(len(text)-1,-1,-1):
     result+=text[i]
   return result
+                
+# v.1 bit simpler
+                
+def reverse(text):
+  result=""
+  for i in text:
+    result = i + result
+  return result
 
 
 # https://www.codecademy.com/courses/learn-python/lessons/practice-makes-perfect/exercises/antivowel
