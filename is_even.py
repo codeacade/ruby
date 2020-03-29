@@ -176,7 +176,7 @@ def scrabble_score(word):
 
 def censor(text, word):
   text = text.split()
-  result = "".join(["*"*len(i) if i==word else i for i in text])  # <<<<<< THIS iS BRILLIANT AND I HAVE TO USE IT
+  result = " ".join(["*"*len(i) if i==word else i for i in text])  # <<<<<< THIS iS BRILLIANT AND I HAVE TO USE IT
   return result
 # a = [x if ... else y for i in b]  <<<< this is abslutely fantastic construction
 # I have no idea why it is not tought first lesson of Python everywhere ??
