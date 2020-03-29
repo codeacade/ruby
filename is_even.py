@@ -156,6 +156,11 @@ def scrabble_score(word):
   for i in word:
     result+=score[i]
   return result
+                
+# one-liner?
+                
+def scrabble_score(word):
+  return sum([score[i] for i in word.lower()])
 
 
 
