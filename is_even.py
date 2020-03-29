@@ -200,6 +200,11 @@ def purify(numbers):
 def purify(numbers):
     result = [i for i in numbers if i%2==0]
     return result
+                
+# using filter() and lambda:
+                
+def purify(numbers):
+    return filter(lambda x: not x%2, numbers)
 
 
 # https://www.codecademy.com/courses/learn-python/lessons/practice-makes-perfect/exercises/product
