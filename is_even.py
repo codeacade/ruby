@@ -53,7 +53,7 @@ def digit_sum(n):
 # version.3 SIMPLEST POSSIBLE !!
 
 def digit_sum(n):
-    return sum([int(i) for i in str(n)])
+    return sum(map(int,str(n)))
 
 
 # https://www.codecademy.com/courses/learn-python/lessons/practice-makes-perfect/exercises/factorial
@@ -134,6 +134,12 @@ def anti_vowel(text):
   result = "".join([i for i in text if i not in "aeiouAEIOU"])
   return result
 
+                
+# version.4 same with lambda
+
+def anti_vowel(text):
+  result = "".join(filter(lambda x:x not in "aeiouAEIOU", text))
+  return result
 
 
 # https://www.codecademy.com/courses/learn-python/lessons/practice-makes-perfect/exercises/scrabblescore
