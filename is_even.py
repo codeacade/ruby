@@ -105,6 +105,10 @@ def reverse(text):
     result = i + result
   return result
 
+# v.2 one-liner:
+                
+def reverse(text):
+  return "".join([text[len(text)-i-1] for i in range(len(a))]
 
 # https://www.codecademy.com/courses/learn-python/lessons/practice-makes-perfect/exercises/antivowel
 # 
