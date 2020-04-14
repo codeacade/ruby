@@ -196,6 +196,7 @@ def censor(text, word):
 def censor(text, word):
   x=0
   a=[]
+  # wordl = len(word)
   while x<len(text)-len(word)+1:
     if text[x:x+len(word)] == word:
       a.append("*"*len(word))
