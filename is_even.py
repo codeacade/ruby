@@ -191,6 +191,22 @@ def censor(text, word):
 # a = [x if ... else y for i in b]  <<<< this is abslutely fantastic construction
 # I have no idea why it is not tought first lesson of Python everywhere ??
 
+# v.1 searching for all substrings in the string - find word even if it is only a part of text (including spaces):
+                 
+def censor(text, word):
+  x=0
+  a=[]
+  while x<len(text)-len(word)+1:
+    if text[x:x+len(word)] == word:
+      a.append("*"*len(word))
+      x = x + len(word)
+    else:
+      a.append(text[x])
+      x+=1
+  a.append(text[(-(len(word)-1)):])
+  return "".join(a)
+  
+
 
 
 # https://www.codecademy.com/courses/learn-python/lessons/practice-makes-perfect/exercises/purify
