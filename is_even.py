@@ -72,6 +72,13 @@ def factorial(x):
 def factorial(x):
   return reduce(lambda x,y:x*y, range(1,x+1)
 
+# recussion version:
+                
+def factorial(x):
+  if x > 1:
+    return n * factorial(n-1)
+  return 1
+                
 # https://www.codecademy.com/courses/learn-python/lessons/practice-makes-perfect/exercises/isprime
 #
 # Define a function called is_prime that takes a number x as input.
