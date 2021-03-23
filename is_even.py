@@ -177,9 +177,9 @@ def scrabble_score(word):
 # one-liner?
                 
 def scrabble_score(word):
-  return sum([score[i] for i in word.lower()])
-
-
+  # return sum([score[i] for i in word.lower()])   ##  no need for square brackets
+  # return sum(score[i] for i in word.lower())     ##  no proof for bad input like "£"
+  return sum(score.get(i) or 0 for i in word.lower())  ##  if i not in score{} take zero value
 
 # https://www.codecademy.com/courses/learn-python/lessons/practice-makes-perfect/exercises/censor-
 # 
